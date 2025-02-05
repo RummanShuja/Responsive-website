@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    font-family: var(--font1);
+    height: 40px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-left{
+    font-size: 30px;
+    display: flex;
+    font-weight: bolder;
+}
+.nav-left ul{
+    display: flex;
+    font-size: 25px;
+    /* font-weight: bold; */
+    align-items: center;
+    margin: 0px 43px;
+    /* font-size: 18px; */
+}
+.nav-left ul li{
+    list-style: none;
+    margin: 0 16px;
+    font-family: var(--font2);
+    
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    /* transition: all 0.2s ease-in-out; */
+}
+.nav-left ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+.content{
+    height: 390px;
+    /* background-color: rgb(237, 237, 251); */
+    display: flex;
+    margin-top: 50px;
+    padding: 9px;
+    position: relative;
+}
+.content::after{
+    content:"" ;
+    background-image: url("../1.jpg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+}
+.content-left{
+    font-family: var(--font2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    z-index: 1;
+    /* width: 50%; */
+}
+.content-right img {
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 160px;
+    position: relative;
+    top: 53px;
+}
+.content-right{
+    display: flex;
+    
+}
+
+.home-articles{
+    padding-top: 12px;
+    margin-top: 20px;
+    position: relative;
+}
+.year-box{
+    position: absolute;
+    right: 10px;
+    height: 250px;
+    width: 250px;
+    /* background-color: brown; */
+}
+.home-article{
+    display: flex;
+    margin: 20px;
+    /* flex-direction: row-reverse; */
+}
+.home-article img{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.home-article-content {
+    align-self: center;
+    padding: 0 24px;
+}
+
+.footer{
+    /* #4a4949e3 */
+    height:40px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.footer a{
+    color: white;
+}
